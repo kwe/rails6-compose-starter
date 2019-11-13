@@ -1,6 +1,7 @@
 This is just my Rails 6 basic docker-compose starter project. 
 
 `
+
 docker-compose up
 
 `
