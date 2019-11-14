@@ -15,6 +15,7 @@ WORKDIR $APP_PATH
 COPY Gemfile "${APP_PATH}/Gemfile"
 COPY Gemfile.lock "${APP_PATH}/Gemfile.lock"
 COPY . /app
+RUN bundle install 
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
